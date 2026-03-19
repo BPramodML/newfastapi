@@ -7,6 +7,10 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+    
+@app.get("/pramod")
+def read_root():
+    return {"welcome pramod"}
 
 @app.get("/name/{name}")
 def read_name(name: str):
